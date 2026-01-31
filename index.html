@@ -81,16 +81,12 @@
 
 <section id="products" class="section">
   <h2 class="section-title">商品ラインナップ</h2>
-  <p class="section-subtitle">クラシックワラチェ（1型）</p>
-  <p style="font-size:0.95rem; color:#555; margin-bottom:1.5rem;">
-    シックで洗練されたデザインは、シンプルなコーディネートにも自然になじみます。
-  </p>
 
   <div class="products">
 
     <div class="card">
-      <a href="file:///C:/Users/kamei/Desktop/octavio/img/classic-black.jpg" class="gallery">
-        <img src="file:///C:/Users/kamei/Desktop/octavio/img/classic-black.jpg" alt="クラシックワラチェ 黒">
+      <a href="img/classic-black.jpg" class="gallery">
+        <img src="img/classic-black.jpg" alt="クラシックワラチェ 黒">
       </a>
       <h3>クラシックワラチェ</h3>
       <p>カラー：黒</p>
@@ -100,8 +96,8 @@
     </div>
 
     <div class="card">
-      <a href="file:///C:/Users/kamei/Desktop/octavio/img/classic-brown.jpg" class="gallery">
-        <img src="file:///C:/Users/kamei/Desktop/octavio/img/classic-brown.jpg" alt="クラシックワラチェ 茶">
+      <a href="img/classic-brown.jpg" class="gallery">
+        <img src="img/classic-brown.jpg" alt="クラシックワラチェ 茶">
       </a>
       <h3>クラシックワラチェ</h3>
       <p>カラー：茶</p>
@@ -111,8 +107,8 @@
     </div>
 
     <div class="card">
-      <a href="file:///C:/Users/kamei/Desktop/octavio/img/classic-pink.jpg" class="gallery">
-        <img src="file:///C:/Users/kamei/Desktop/octavio/img/classic-pink.jpg" alt="クラシックワラチェ 限定職人ピンク">
+      <a href="img/classic-pink.jpg" class="gallery">
+        <img src="img/classic-pink.jpg" alt="クラシックワラチェ 限定職人ピンク">
       </a>
       <h3>クラシックワラチェ</h3>
       <p>カラー：限定職人ピンク</p>
@@ -125,25 +121,15 @@
   </div>
 </section>
 
-<section id="story" class="section">
-  <h2>足元から感じるメキシコ</h2>
-  <p>メキシコの魅力あるワラチェを、日本で紹介したいという想いから始めました。</p>
-  <p>大量生産ではなく、ひとつひとつ丁寧に作られたものの価値を伝えたいと思っています。</p>
-  <p>日本にいながら、本物のメキシコ文化を足元で感じてもらうこと。<br>
-     それぞれのワラチェには、メキシコで育まれた職人の技と物語が込められています。</p>
-  <p>海を越えて、あなたのもとへお届けします。</p>
-</section>
-
 <section id="contact" class="section">
   <h2>ご注文・お問い合わせ</h2>
-  <p>ワラチェのご購入をご希望の方は、以下のフォームからご連絡ください。
-     サイズ・在庫・お届け予定日・お支払い方法をご案内いたします。</p>
 
-  <!-- Formsubmit用フォーム -->
-  <form action="https://formsubmit.co/octavio.co.huarachemexico@gmail.com" method="POST">
+  <form action="https://formsubmit.co/あなたのGmail@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
-     <input type="hidden" name="_subject" value="Huarache Mexico｜新しいご注文・お問い合わせ">
-     <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。Huarache Mexicoです。2〜3営業日以内にご返信いたします。">
+    <input type="hidden" name="_subject" value="Huarache Mexico｜新しいご注文・お問い合わせ">
+    <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。Huarache Mexicoです。2〜3営業日以内にご返信いたします。">
+    <input type="hidden" name="_next" value="https://あなたのサイトURL/thanks.html">
+
     <p>
       <label>お名前<br />
         <input type="text" name="name" placeholder="例：山田 花子" style="width:100%; padding:0.5rem;" required />
@@ -173,12 +159,10 @@
   <p>&copy; 2026 Huarache Mexico. All Rights Reserved.</p>
 </footer>
 
-<!-- SimpleLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2/dist/simple-lightbox.min.js"></script>
 <script>
-  // ギャラリー初期化
   const lightbox = new SimpleLightbox('.gallery', { captions: true, captionsData: 'alt' });
 </script>
-
 </body>
 </html>
+
