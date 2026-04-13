@@ -1,168 +1,199 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ご注文ありがとうございます | Huarache Mexico</title>
+  <title>Huarache Mexico | Handmade Huaraches</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts -->
-  
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <meta name="google-site-verification" content="CdvCjmHnLEyEW2VXH20bEQRobud25FLV6wLHZwC1rU4" />
-
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDK44L24XE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-WDK44L24XE');
-</script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-family: "Patrick Hand", cursive;
+      font-family: "Playfair Display", serif;
       margin: 0;
-      background-color: #fbf7f2;
-      color: #333;
-      background-image:
-        radial-gradient(rgba(142, 43, 28, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(241, 196, 15, 0.04), rgba(241, 196, 15, 0.0));
-      background-size: 48px 48px, 100% 300px;
-      background-position: 0 0, 0 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .papel {
-      background: repeating-linear-gradient(90deg,
-        #e74c3c 0px, #e74c3c 40px,
-        #f1c40f 40px, #f1c40f 80px,
-        #27ae60 80px, #27ae60 120px,
-        #3498db 120px, #3498db 160px);
-      height: 24px;
+      color: #222;
+      background-color: #ffffff;
     }
 
     header {
-      background: linear-gradient(to right, #8e2b1c, #c0392b, #e67e22);
-      color: white;
-      padding: 2.5rem 1rem 2rem;
+      background: #ffffff;
       text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      border-bottom: 1px solid #eee;
     }
 
     header h1 {
-      letter-spacing: 0.15em;
-      font-size: 3rem;
-      margin: 0;
+      letter-spacing: 0.1em;
+      font-size: 2.8rem;
     }
 
-    main {
-      flex: 1;
+    nav {
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding: 2rem 1rem;
+      gap: 2rem;
+      padding: 0.8rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 4rem 1rem;
       text-align: center;
     }
 
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      max-width: 500px;
-      width: 100%;
-      padding: 2.5rem 2rem;
-      position: relative;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 8px;
-      background: repeating-linear-gradient(90deg,
-        #e74c3c 0px, #e74c3c 20px,
-        #f1c40f 20px, #f1c40f 40px,
-        #27ae60 40px, #27ae60 60px,
-        #3498db 60px, #3498db 80px);
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
-    }
-
-    .icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-family: "Amatic SC", cursive;
+    .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: #8e2b1c;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
     }
 
     .btn {
       display: inline-block;
-      padding: 0.7rem 1.8rem;
-      background-color: #8e2b1c;
+      padding: 0.6rem 1.2rem;
+      background-color: #222;
       color: white;
-      border-radius: 8px;
+      border-radius: 4px;
       text-decoration: none;
-      font-size: 1.1rem;
-      transition: background-color 0.2s ease;
-    }
-
-    .btn:hover {
-      background-color: #a93226;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
       font-size: 0.9rem;
     }
 
-    * {
-      font-family: "Patrick Hand", cursive;
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      border-bottom: 1px solid #ddd;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 140px;
+      object-fit: contain;
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
-<body>
 
-<div class="papel"></div>
+<body>
 
 <header>
   <h1>Huarache Mexico</h1>
-  <p>メキシコの職人が一足ずつ手作りする、本物のワラチェ</p>
+  <p>Handcrafted huaraches made by Mexican artisans</p>
 </header>
 
-<main>
-  <div class="card">
-   <h2>ご注文ありがとうございます！</h2>
-    <p>
-      お問い合わせ・ご注文を無事に受け付けました。<br>
-      Huarache Mexicoより、2〜3営業日以内にご登録のメールアドレスへご連絡いたします。
-    </p>
-    <p style="font-size: 0.95rem; color: #555;">
-      ※万が一、返信が届かない場合は迷惑メールフォルダもご確認ください。
-    </p>
-    <a href="index.html" class="btn">トップページに戻る</a>
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#story">Story</a>
+  <a href="#contact">Contact</a>
+  <a href="index.html">JP</a>
+</nav>
+
+<section class="hero">
+  <h1>Walk with tradition</h1>
+  <p>
+    We work directly with artisans in Mexico,  
+    delivering authentic craftsmanship with care.
+  </p>
+  <a href="#products" class="btn">View Products</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About Huarache</h2>
+  <p>
+    Huaraches are traditional Mexican leather sandals,  
+    known for their comfort and durability.  
+    Each pair is handcrafted by skilled artisans.
+  </p>
+</section>
+
+<section id="products" class="section">
+  <h2>Products</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="classic-black.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Black</p>
+      <p>Size: 23cm / 24cm</p>
+      <p>Price: Contact us</p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+    <div class="card">
+      <img src="classic-brown.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Brown</p>
+      <p>Size: 23cm / 24cm</p>
+      <p>Price: Contact us</p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+    <div class="card">
+      <img src="classic-pink.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Limited Pink</p>
+      <p>Size: 23cm / 24cm</p>
+      <p>Price: Contact us</p>
+      <p><strong>Limited</strong></p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
   </div>
-</main>
+</section>
+
+<section id="story" class="section">
+  <h2>Our Story</h2>
+  <p>
+    This project started in a small workshop in Mexico.  
+    We value craftsmanship and connection.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <form>
+    <p><input type="text" placeholder="Your Name" style="width:100%; padding:0.5rem;"></p>
+    <p><input type="email" placeholder="Email Address" style="width:100%; padding:0.5rem;"></p>
+    <p><textarea placeholder="Product / Size / Address" style="width:100%; padding:0.5rem;" rows="4"></textarea></p>
+    <p><button class="btn">Send</button></p>
+  </form>
+</section>
 
 <footer>
-  <p>&copy; 2026 Huarache Mexico. All Rights Reserved.</p>
+  <p>&copy; 2026 Huarache Mexico</p>
 </footer>
 
 </body>
