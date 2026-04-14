@@ -1,22 +1,130 @@
-<form action="https://formsubmit.co/octavio.co.huarachemexico@gmail.com" method="POST">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Huarache Mexico</title>
 
-  <input type="hidden" name="_autoresponse" value="Thank you for your message! We will contact you soon.">
-  <input type="hidden" name="_next" value="thanks.html">
+  <style>
+  .products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
 
+  .card {
+    width: 300px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: #fff;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Huarache Mexico</h1>
+  <p>Handcrafted huaraches made by Mexican artisans</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#story">Story</a>
+  <a href="#contact">Contact</a>
+  <a href="index.html">JP</a>
+</nav>
+
+<section class="hero">
+  <h1>Walk with tradition</h1>
   <p>
-    <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:0.5rem;">
+    Huaraches are traditional sandals passed down through generations.
+    We work directly with artisans in Mexico to bring their craftsmanship to you.
+  </p>
+  <a href="#products" class="btn">View Products</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About Huarache</h2>
+  <p>
+    Huaraches are traditional Mexican leather sandals known for their breathability and durability.
+    Each pair is carefully handcrafted by skilled artisans.
+  </p>
+</section>
+
+<section id="products" class="section">
+  <h2>Products</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="classic-black.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Black</p>
+      <p>Size: 23cm / 24cm / 25cm</p>
+      <p>Price: Contact us</p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+    <div class="card">
+      <img src="classic-brown.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Brown</p>
+      <p>Size: 23cm / 24cm / 25cm</p>
+      <p>Price: Contact us</p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+    <div class="card">
+      <img src="classic-pink.jpg">
+      <h3>Classic Huarache</h3>
+      <p>Color: Limited Pink</p>
+      <p>Size: 23cm / 24cm / 25cm</p>
+      <p>Price: Contact us</p>
+      <p><strong>Limited</strong></p>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="story" class="section">
+  <h2>Our Story</h2>
+  <p>
+    This project began in a small workshop in Mexico.
+    We value craftsmanship and the connection between artisans and customers.
+  </p>
+  <p>
+    Our goal is to share authentic Mexican culture and support artisans so they can continue their work with pride.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>
+    If you would like to purchase, please contact us through the form below.
   </p>
 
-  <p>
-    <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:0.5rem;">
-  </p>
+  <form>
+    <p>
+      <input type="text" placeholder="Your Name" style="width:100%; padding:0.5rem;" />
+    </p>
+    <p>
+      <input type="email" placeholder="Email Address" style="width:100%; padding:0.5rem;" />
+    </p>
+    <p>
+      <textarea placeholder="Product / Size / Address" style="width:100%; padding:0.5rem;" rows="4"></textarea>
+    </p>
+    <p>
+      <button type="submit" class="btn">Send</button>
+    </p>
+  </form>
+</section>
 
-  <p>
-    <textarea name="message" placeholder="Product / Size / Address" style="width:100%; padding:0.5rem;" rows="4"></textarea>
-  </p>
-
-  <p>
-    <button type="submit" class="btn">Send</button>
-  </p>
-
-</form>
+</body>
+</html>
